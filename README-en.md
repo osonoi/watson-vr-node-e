@@ -1,7 +1,5 @@
 # watson-vr-node
-IBM Watson Visual Recognitionを使ったnode.jsの画像認識Webアプリです。
-
->2019/09/13: Detect Faces のメソッドが削除されたため、取り急ぎ顔認証部分のUIはコメントアウトして表示しないように変更しました。
+Visual Recognition Web application using IBM Watson Visual Recognition This apps is identify whether your mas properly have on your face.
 
 ## 1. 事前準備
 ### 1. IBM Cloudのアカウントを取得
