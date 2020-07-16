@@ -66,11 +66,12 @@ ibmcloud cf push
 - 4-5 Bind Visual Recognition service to your apps
 - 4-5-1 login to IBM Cloud at https://cloud.ibm.com/login (Browser screen)
 - 4-5-2 Click "Cloud Foundry apps" on Dashboard
-- 4-5-3 Find and click "connect" on the right side of the screen.
-- 4-5-4 Click "Create connect"
-- 4-5-5 find "Visual Recognition" and click "Connect"
-- 4-5-6 Click "re-stage"
-- 4-5-7 wait 2,3 minutes and you will see apps URL. Click that URL so you can see application on another tab.
+- 4-5-3 Click your apps name
+- 4-5-4 Select "Connections" on the left side menu and "Create connection" on the right side of the screen.
+- 4-5-5 Check "Visual Recognition" and click "next", followed by click "Connext"
+- 4-5-6 Click "Restage"
+- 4-5-7 wait 2,3 minutes and you will see "Visit URL" is becomes available, Click that and go to apps tab.
+
 
 
 
