@@ -33,35 +33,11 @@ cd watson-vr-node
 ## 4. Deploy Apps on IBM Cloud , Cloud foundry service
  Follow these instruction and deploy app
 - 4-1 edit `manifest.yml` in watson-vr-node directory
-   - line 3#### 1-1) 3行目　<Set Your Application Name>
-ご自分のアプリケーション名に変更します。アプリケーション名はURLの先頭部分となるため、bluemix.net内でユニークな値である必要があります。
-自分のIBM CloudのID等と組みわせて、ユニークになるような名前にしてください。前後の`<>`は不要です。<br/>
-例: 
-```
-- name: myid-watson-vr
+   - line 3 <Set Your Application Name> to any name you like (It shoud be unique among IBM cloud apps)   ex: name: myid-watson-vr
+   - line 8 <Set Your CLASSIFIER_ID> to your custom class number. If you don't have custom model make this food  ex: CLASSIFIER_ID: food
 ````
 
-#### 1-2) 8行目　<Set Your CLASSIFIER_ID>
-Visual RecognitionのカスタムクラスのIDを記入します。
-
-2で[Watson Visual Recognition カスタムクラスを作ろう!](https://qiita.com/nishikyon/items/7d1c07e2f50c1002e815)を参照してカスタムクラスを作成した場合は、
-[11. モデルの表示](https://qiita.com/nishikyon/items/7d1c07e2f50c1002e815#11-%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E8%A1%A8%E7%A4%BA) と[12. Classifier IDの取得](https://qiita.com/nishikyon/items/7d1c07e2f50c1002e815#12-classifier-id%E3%81%AE%E5%8F%96%E5%BE%97)の手順に従い、Classifier IDをコピーしペーストします。
-
-
-カスタムクラスを作成していない場合は、IBMが提供している食物に特化したカスタムクラスのid,`food`を記入します。前後の`<>`は不要です。<br/>
-例　カスタムクラスを作成した場合: 
-```
-env:
-    CLASSIFIER_ID: DefaultCustomModel_1941703287
-````
-
-例　カスタムクラスを作成していない場合: 
-```
-env:
-    CLASSIFIER_ID: food
-````
-
-全体例:
+example:
 ```
 ---
 applications:
