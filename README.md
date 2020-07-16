@@ -8,33 +8,39 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
    - [Install IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli) <br>
 
 
-## 2. Create Visual Recognition service
-If you already have this service skip this
+## 2. Create Visual Recognition service and get credential info.
+If you already have this service , go to 2-7
 
-2-1. Login to IBM Cloud https://cloud.ibm.com/login
+   2-1. Login to IBM Cloud https://cloud.ibm.com/login
 
-2-2. Click "Catalog" on upper menu.
+   2-2. Click "Catalog" on upper menu.
 
-2-3. In the search field, enter "Visual Recongnition" and Enter.
+   2-3. In the search field, enter "Visual Recongnition" and Enter.
 
-2-4. Find "Visual Recognition` and click
+   2-4. Find "Visual Recognition` and click
 
-5. `Hit Create on right side of the screen
+   2-5. `Hit Create on right side of the screen
+
+   2-6. Wait 2,3 minutes complete.
+
+   2-7. On Visual Recongnition menu, select "Service credential" on left side of the menu.
+
+   2-8. Open one of the key and copy and save apikey and url to somewhere on your PC.
 
 
 ## 3. Clone app to local environment8Mac, PC)
-下記のコマンドを実行しアプリケーションのコードをGitHubのリポジトリからクローンします。
+Clone this repository in a folder your choice:
 ```
-git clone https://github.com/kyokonishito/watson-vr-node.git
+git clone https://github.com/osonoi-so/watson-vr-node.git
 ```
-クローンが完了したら以下のコマンドを入力してください。
+then change directory to watson-vr-node by
 ```
 cd watson-vr-node
 ```
 
-## 4. アプリケーションのIBM Cloudへのデプロイ
-> Local PCで動作させる方法は後日記載予定です。
-### 1. `manifest.yml`の編集
+## 4. Deploy Apps on IBM Cloud , Cloud foundry service
+ Follow these instruction and deploy app
+### 1. edit `manifest.yml`
 watson-vr-nodeフォルダにある`manifest.yml`を2箇所変更して保存します。
 #### 1-1) 3行目　<Set Your Application Name>
 ご自分のアプリケーション名に変更します。アプリケーション名はURLの先頭部分となるため、bluemix.net内でユニークな値である必要があります。
