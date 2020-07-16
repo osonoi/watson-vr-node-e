@@ -33,7 +33,7 @@ cd watson-vr-node
 ## 4. Deploy Apps on IBM Cloud , Cloud foundry service
  Follow these instruction and deploy app
 - 4-1 edit `manifest.yml` in watson-vr-node directory
-   -line 3#### 1-1) 3行目　<Set Your Application Name>
+   - line 3#### 1-1) 3行目　<Set Your Application Name>
 ご自分のアプリケーション名に変更します。アプリケーション名はURLの先頭部分となるため、bluemix.net内でユニークな値である必要があります。
 自分のIBM CloudのID等と組みわせて、ユニークになるような名前にしてください。前後の`<>`は不要です。<br/>
 例: 
