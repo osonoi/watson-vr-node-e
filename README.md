@@ -33,9 +33,8 @@ cd watson-vr-node
 ## 4. Deploy Apps on IBM Cloud , Cloud foundry service
  Follow these instruction and deploy app
 - 4-1 edit `manifest.yml` in watson-vr-node directory
-   - line 3 <Set Your Application Name> to any name you like (It shoud be unique among IBM cloud apps)   ex: name: myid-watson-vr
-   - line 8 <Set Your CLASSIFIER_ID> to your custom class number. If you don't have custom model make this food  ex: CLASSIFIER_ID: food
-````
+   - line 3 <Set Your Application Name> to any name you like (It shoud be unique among IBM cloud apps)
+   - line 8 <Set Your CLASSIFIER_ID> to your custom class number. If you don't have custom model make this food.
 
 example:
 ```
