@@ -4,8 +4,8 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 # Architecture Flow
 
 ## 1. Prerequisites
-### 1. IBM Cloud account
-
+   -[IBM Cloud account](https://cloud.ibm.com)
+   -[Install IBM Cloud CLI) 
 ### 2. IBM [CloudのCLIをインストール](https://cloud.ibm.com)
 ### 2-1)  
 https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli にアクセスし、"インストーラーを使用したインストール" または"シェルからのインストール"　をご利用されているOSに合わせて実行してください。
