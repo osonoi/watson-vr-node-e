@@ -4,48 +4,8 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 # Architecture Flow
 
 ## 1. Prerequisites
-   - [IBM Cloud account](https://cloud.ibm.com) <br>
-   - [Install IBM Cloud CLI) 
-
-### 2. IBM [CloudのCLIをインストール](https://cloud.ibm.com)
-### 2-1)  
-https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli にアクセスし、"インストーラーを使用したインストール" または"シェルからのインストール"　をご利用されているOSに合わせて実行してください。
-
-
-### 2-2)  以下のコマンドを実行し、必要なツールのインストールが完了しているか検証を行ってください。
-出力例のようにバージョン情報が出力されればOKです
-```
-ibmcloud --version
-```
-
-出力例：
-```
-ibmcloud version 0.7.1+8a6d40e-2018-06-07T07:13:39+00:00
-```
-
-### 2-3) CLIでIBM Cloudにログインできるか確認
-ターミナルやコマンドプロンプトを利用し以下のコマンドを実行しログインできることを確認します。
-
-```
-ibmcloud login -r us-south
-```
-作成したアカウントのメールアドレスやパスワードを入力しログインしてください
-ログインが正常に行えればOkです。
-
-
-出力例：
-```
-API endpoint:       https://api.ng.bluemix.net
-Region:                  us-south
-User:                      XXXXXX@hoge.com
-Account:                XXXXX's Account (xxxxxxxxxxxxxxxxxxxxx)
-Resource group:    default
-CF API endpoint:   https://api.ng.bluemix.net (API version: 2.92.0)
-Org:                        XXXXXX@hoge.com
-Space:                    dev
-OK
-```
-
+   - [IBM Cloud account](https://cloud.ibm.com){:target="_blank"} <br>
+   - [Install IBM Cloud CLI] (https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli) {:target="_blank"} <br>
 
 
 ## 2. Visual Recognition サービスの作成
