@@ -1,16 +1,12 @@
 # watson-vr-node
-IBM Watson Visual Recognitionを使ったnode.jsの画像認識Webアプリです。
+Visual Recognition Web application using IBM Watson Visual Recognition This apps is identify whether your mas properly have on your face.
 
->2019/09/13: Detect Faces のメソッドが削除されたため、取り急ぎ顔認証部分のUIはコメントアウトして表示しないように変更しました。
+# Architecture Flow
 
-## 1. 事前準備
-### 1. IBM Cloudのアカウントを取得
-お持ちでないかたは [こちら](https://cloud.ibm.com/registration?cm_mmc=Email_Events-_-Developer_Innovation-_-WW_WW-_-nishito\tokyo\japan&cm_mmca1=000019RS&cm_mmca2=10004805&cm_mmca3=M99938765&cvosrc=email.Events.M99938765&cvo_campaign=000019RS
-)から取得お願いします。
+## 1. Prerequisites
+### 1. IBM Cloud account
 
-取得方法の動画はこちらです: https://youtu.be/Krn1jQ4iy_s
-
-### 2. IBM CloudのCLIをインストール
+### 2. IBM [CloudのCLIをインストール](https://cloud.ibm.com)
 ### 2-1)  
 https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli にアクセスし、"インストーラーを使用したインストール" または"シェルからのインストール"　をご利用されているOSに合わせて実行してください。
 
