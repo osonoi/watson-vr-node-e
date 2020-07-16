@@ -4,35 +4,25 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 # Architecture Flow
 
 ## 1. Prerequisites
-   - [IBM Cloud account](https://cloud.ibm.com){:target="_blank"} <br>
-   - [Install IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli){:target="_blank"} <br>
+   - [IBM Cloud account](https://cloud.ibm.com) <br>
+   - [Install IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli) <br>
 
 
-## 2. Visual Recognition サービスの作成
-Visual Recognition サービスを作成していない場合は、作成します。既に作成済みであれば、作成済みのものを使用できます。
+## 2. Create Visual Recognition service
+If you already have this service skip this
 
->画面イメージのある手順を参照したい場合は[Watson APIを使うための前準備: サービスの作成と資格情報の取得](https://qiita.com/nishikyon/items/9b8f697db7ad0a693839)の[1. Watson サービスの作成](https://qiita.com/nishikyon/items/9b8f697db7ad0a693839#1-watson-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E4%BD%9C%E6%88%90)を参照して下さい (`2. サービスの資格情報取得`は実施不要です)。以下の`6. (オプション) カスタム分類クラスの作成` はその後に実施ください。
+2-1. Login to IBM Cloud https://cloud.ibm.com/login
 
-1. https://cloud.ibm.com/login よりIBM Cloudにログイン
+2-2. Click "Catalog" on upper menu.
 
-2. 表示された「ダッシュボード」の上部のメニュー「カタログ」をクリック
+2-3. In the search field, enter "Visual Recongnition" and Enter.
 
-3. 表示された「カタログ」の上部の検索フィールドに`Visual Recognition`と入力し、「Enter」キーをクリック。
+2-4. Find "Visual Recognition` and click
 
-4. 表示された サービス・AIカテゴリの`Visual Recognition`をクリック。
-
-5. `Visual Recognition`サービス作成の画面が表示されるので、右側のの'作成'をクリックして、サービスを作成する。
-
-6. (オプション) カスタム分類クラスの作成
-
-自分の写真で分類クラスを作成したい場合は実施してください。
->こちらは省略可能です。省略した場合はIBMが提供する食品に特化した分類クラス`food`を使用します。
-
-[Watson Visual Recognition カスタムクラスを作ろう!](https://qiita.com/nishikyon/items/7d1c07e2f50c1002e815)を参照してカスタム分類クラスの作成を行ってください。
-[10. トレーニング開始](https://qiita.com/nishikyon/items/7d1c07e2f50c1002e815#10-%E3%83%88%E3%83%AC%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E9%96%8B%E5%A7%8B)まで実施お願いします。
+5. `Hit Create on right side of the screen
 
 
-## 3. アプリケーションのClone
+## 3. Clone app to local environment8Mac, PC)
 下記のコマンドを実行しアプリケーションのコードをGitHubのリポジトリからクローンします。
 ```
 git clone https://github.com/kyokonishito/watson-vr-node.git
