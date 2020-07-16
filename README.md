@@ -5,7 +5,7 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 
 ## 1. Prerequisites
    - [IBM Cloud account](https://cloud.ibm.com){:target="_blank"} <br>
-   - [Install IBM Cloud CLI] (https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli) {:target="_blank"} <br>
+   - [Install IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli){:target="_blank"} <br>
 
 
 ## 2. Visual Recognition サービスの作成
