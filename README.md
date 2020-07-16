@@ -49,28 +49,22 @@ applications:
   memory: 256M
 ```
 
-### 2. IBM Cloudへの ログイン
-以下のコマンドを入力してください。
+- 4-2 login to IBM cloud
 ```
 ibmcloud login -r us-south
 ```
-作成したアカウントのメールアドレスやパスワードを入力しログインしてください。
-
-次に以下のコマンドを入力してください。
+target environment to Cloud foundry
 ```
 ibmcloud target --cf
 ```
-### 3. IBM Cloudへの アプリケーションのアップロード
-アプリケーションをIBM Cloudへアップロードします。以下のコマンドを入力してください。
+- 4-3 Upload code to IBM Cloud
+ Upload code by this command
 ```
 ibmcloud cf push
 ```
-Visual Recognitionとのバインドが済んでいないため、開始は`失敗`となりますが、ここでは問題ありません。
+ This command just upload the code but does't start the apps
 
-> ５のバインド実施後に再プッシュする場合(CLASSIFIER_IDを変更する場合など）は正常に開始されます。
-
-
-## 5. Visual Recognition サービスのバインドとアプリケーションの開始
+- 4-5 Bind Visual Recognition service to your apps
 
 IBM CloudのCloud Foundry アプリケーションと　IBM Cloud上のサービスを接続(bind)すると、資格情報や接続情報が連携され、個別に設定する必要がなくなります。
 
