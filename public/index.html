@@ -36,7 +36,7 @@
 
             <div class="row">
                 <div class="card border-info col-sm-12 col-md-6" >
-                    <div class="card-header"> --- Photo --- 認識させる写真 </div>
+                    <div class="card-header"> --- Photo --- photo to be recognized </div>
                     <div class="card-body" >
 
                         <div id="preview">
@@ -53,7 +53,7 @@
 
 
                     <input type="file" @change="onFileChange" class="form-control-file" name="inputFile" accept="image/*" aria-describedby="fileHelp">
-                    <small id="fileHelp" class="form-text text-muted">上のボタンをクリックして写真を選ぶか、クリック後カメラボタンをクリックし撮影して上記に写真を表示させてください</small>
+                    <small id="fileHelp" class="form-text text-muted">Click above to select picture or take a picture</small>
 
                 </div>
             </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="row">
                 
-                    <button type="button" @click="classifyImages" class="btn btn-primary">Watsonで認識（Watson学習済みモデルを利用）</button>
+                    <button type="button" @click="classifyImages" class="btn btn-primary">Watson recognize（General Model）</button>
                
                 
             </div>
@@ -87,9 +87,9 @@
                         <table class="table table-hover">
                                 <thead>
                                 <tr>
-                                    <th scope="col">認識結果 class</th>
-                                    <th scope="col">確信度 score</th>
-                                    <th scope="col">タイプ type_hierarchy</th>
+                                    <th scope="col">class</th>
+                                    <th scope="col">score</th>
+                                    <th scope="col">type_hierarchy</th>
                                 </tr>
 
                                 </thead>
@@ -118,7 +118,7 @@
                 </div>
             <div class="row">
 
-                    <button type="button" @click="classifyCustomImages" class="btn btn-primary">Watsonで認識（カスタムモデルを利用）</button>
+                    <button type="button" @click="classifyCustomImages" class="btn btn-primary">Watson Recognize(Custom model(food)）</button>
     
             </div>
 
