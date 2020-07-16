@@ -30,7 +30,7 @@ async function callVisualRecognition(filePath, baseUrl) {
         case '/classifyImages':
             params = {
                 imagesFile: fs.createReadStream(filePath),
-                acceptLanguage: 'ja'
+                acceptLanguage: 'en'
             };
             break;
 
@@ -38,7 +38,7 @@ async function callVisualRecognition(filePath, baseUrl) {
             params = {
                 imagesFile: fs.createReadStream(filePath),
                 classifierIds: [CLASSIFIER_ID],
-                acceptLanguage: 'ja'
+                acceptLanguage: 'en'
             };
             break;
     };
