@@ -11,21 +11,21 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 ## 2. Create Visual Recognition service and get credential info.
 If you already have this service , go to 2-7
 
-   2-1. Login to IBM Cloud https://cloud.ibm.com/login
+- 2-1. Login to IBM Cloud https://cloud.ibm.com/login
 
-   2-2. Click "Catalog" on upper menu.
+- 2-2. Click "Catalog" on upper menu.
 
-   2-3. In the search field, enter "Visual Recongnition" and Enter.
+- 2-3. In the search field, enter "Visual Recongnition" and Enter.
 
-   2-4. Find "Visual Recognition` and click
+- 2-4. Find "Visual Recognition` and click
 
-   2-5. `Hit Create on right side of the screen
+- 2-5. `Hit Create on right side of the screen
 
-   2-6. Wait 2,3 minutes complete.
+- 2-6. Wait 2,3 minutes complete.
 
-   2-7. On Visual Recongnition menu, select "Service credential" on left side of the menu.
+- 2-7. On Visual Recongnition menu, select "Service credential" on left side of the menu.
 
-   2-8. Open one of the key and copy and save apikey and url to somewhere on your PC.
+- 2-8. Open one of the key and copy and save apikey and url to somewhere on your PC.
 
 
 ## 3. Clone app to local environment8Mac, PC)
