@@ -29,7 +29,8 @@ and get "apikey" (Save this to your note)
 ```
 oc new-app https://github.com/osonoi/watson-vr-node-e.git -e CLASSIFIER_ID=food -e WATSON_VISION_COMBINED_APIKEY=<APIKEY>
 ```
-Please raplace <APIKEY> to your API KEI you get in the first step of this workshop.
+- Please raplace APIKEY to your API KEI you get in the first step of this workshop.
+- like ....WATSON_VISION_COMBINED_APIKEY=923eu9213ukewjdkewj.......
 ```
 oc logs -f bc/watson-vr-node-e
 oc expose deployment watson-vr-node-e --port=3000 --type=LoadBalancer --name=watson-vr-node-ingress
