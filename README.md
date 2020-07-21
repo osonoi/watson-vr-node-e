@@ -42,9 +42,11 @@ Example
 watson-vr-node-ingress   watson-vr-node-ingress-watson-vr.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud          watson-vr-node-ingress   3000                 None
 ```
 
-- You can see the applcation URL like 
+- You can see the applcation URL as HOST like
 - http://watson-vr-node-ingress-default.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud/
 - Please open new tab and access to that URL
+
+![AI](https://github.com/osonoi-so/watson-vr-node/blob/master/images/ai1.png)
 
 
 # Deploy on Cloud foundry
