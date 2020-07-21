@@ -5,6 +5,8 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 
 ![Program](https://github.com/osonoi-so/watson-vr-node/blob/master/images/program.png)
 
+# Deploy on Cloud foundry
+
 ## 1. Prerequisites
    - [IBM Cloud account](https://cloud.ibm.com) <br>
    - [Install IBM Cloud CLI](https://cloud.ibm.com/docs/cli/reference/ibmcloud?topic=cloud-cli-install-ibmcloud-cli) <br>
