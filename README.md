@@ -16,10 +16,13 @@ and get "apikey" (Save this to your note)
 - Select "Red Hat OpenShift on IBM Cloud" (scroll down)
 - then Select "Hands on Labs for Red Hat OpenShift on IBM Cloud"
 - then Select Lab1 and "launch Lab", you can see command line interface on the right.
+
 ![OpenShift](https://github.com/osonoi-so/watson-vr-node/blob/master/images/oc1.png)
+
 - Go to Exercise 2 and lauch the OpenShift Web console as described in that page.
 - You can see the OpenShift console in another tab.
 - Copy login command to your clipboard. (right upper corner, click your account name-> click token -> copy command below "Lpg in with this token")
+
 ![OpenShift](https://github.com/osonoi-so/watson-vr-node/blob/master/images/oc2.png)
 - Paste that to command line console.
 ![OpenShift](https://github.com/osonoi-so/watson-vr-node/blob/master/images/oc3.png)
