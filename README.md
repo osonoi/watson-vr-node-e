@@ -16,21 +16,32 @@ and get "apikey" (Save this to your note)
 - Select "Red Hat OpenShift on IBM Cloud" (scroll down)
 - then Select "Hands on Labs for Red Hat OpenShift on IBM Cloud"
 - then Select Lab1 and "launch Lab", you can see command line interface on the right.
+![OpenShift](https://github.com/osonoi-so/watson-vr-node/blob/master/images/oc1.png)
 - Go to Exercise 2 and lauch the OpenShift Web console as described in that page.
 - You can see the OpenShift console in another tab.
-- Copy login command to your clipboard. (right upper corner, click your account name)
+- Copy login command to your clipboard. (right upper corner, click your account name-> click token -> copy command below "Lpg in with this token")
+![OpenShift](https://github.com/osonoi-so/watson-vr-node/blob/master/images/oc2.png)
 - Paste that to command line console.
+![OpenShift](https://github.com/osonoi-so/watson-vr-node/blob/master/images/oc3.png)
 
 ## 3.Create project and deploy application.
 - Input these command to create project and deploy a@pplication.
 ```
 oc new-app https://github.com/osonoi/watson-vr-node-e.git -e CLASSIFIER_ID=food -e WATSON_VISION_COMBINED_APIKEY=<APIKEY>
+```
 Please raplace <APIKEY> to your API KEI you get in the first step of this workshop.
+```
 oc logs -f bc/watson-vr-node-e
 oc expose deployment watson-vr-node-e --port=3000 --type=LoadBalancer --name=watson-vr-node-ingress
 oc expose service watson-vr-node-ingress
 oc get route/watson-vr-node-ingress
 ```
+```
+Example
+   NAME                     HOST/PORT                          PATH   SERVICES                 PORT   TERMINATION   WILDCARD
+watson-vr-node-ingress   watson-vr-node-ingress-watson-vr.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud          watson-vr-node-ingress   3000                 None
+```
+
 - You can see the applcation URL like 
 - http://watson-vr-node-ingress-default.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud/
 - Please open new tab and access to that URL
