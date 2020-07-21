@@ -5,6 +5,37 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 
 ![Program](https://github.com/osonoi-so/watson-vr-node/blob/master/images/program.png)
 
+## Deploy on OpenShift (using IBM.com Demo site)
+* ** Create Watson VR service and get credential info
+If you already have this, you don't have to create it. you can just use exsisting service
+Reffer https://cloud.ibm.com/docs/visual-recognition?topic=visual-recognition-getting-started-tutorial
+and get "apikey" (Save this to your note)
+
+* ** setup Openshift
+Go to https://www.ibm.com/demos/
+Select "Red Hat OpenShift on IBM Cloud" (scroll down)
+then Select "Hands on Labs for Red Hat OpenShift on IBM Cloud"
+then Select Lab1 and "launch Lab", you can see command line interface on the right.
+Go to Exercise 2 and lauch the OpenShift Web console as described in that page.
+You can see the OpenShift console in another tab.
+Copy login command to your clipboard. (right upper corner, click your account name)
+Paste that to command line console.
+
+* ** Create project and deploy application.
+Input these command to create project and deploy a@pplication.
+```
+oc new-app https://github.com/osonoi/watson-vr-node-e.git -e CLASSIFIER_ID=food -e WATSON_VISION_COMBINED_APIKEY=<APIKEY>
+Please raplace <APIKEY> to your API KEI you get in the first step of this workshop.
+oc logs -f bc/watson-vr-node-e
+oc expose deployment watson-vr-node-e --port=3000 --type=LoadBalancer --name=watson-vr-node-ingress
+oc expose service watson-vr-node-ingress
+oc get route/watson-vr-node-ingress
+```
+You can see the applcation URL like 
+ http://watson-vr-node-ingress-default.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud/
+Please open new tab and access to that URL
+
+
 # Deploy on Cloud foundry
 
 ## 1. Prerequisites
@@ -73,36 +104,4 @@ ibmcloud cf push
 - 4-5-5 Check "Visual Recognition" and click "next", followed by click "Connext"
 - 4-5-6 Click "Restage"
 - 4-5-7 wait 2,3 minutes and you will see "Visit URL" is becomes available, Click that and go to apps tab.
-
-## Workshop Instruction
-* ** Create Watson VR service and get credential info
-If you already have this, you don't have to create it. you can just use exsisting service
-Reffer https://cloud.ibm.com/docs/visual-recognition?topic=visual-recognition-getting-started-tutorial
-and get "apikey" (Save this to your note)
-
-* ** setup Openshift
-Go to https://www.ibm.com/demos/
-Select "Red Hat OpenShift on IBM Cloud" (scroll down)
-then Select "Hands on Labs for Red Hat OpenShift on IBM Cloud"
-then Select Lab1 and "launch Lab", you can see command line interface on the right.
-Go to Exercise 2 and lauch the OpenShift Web console as described in that page.
-You can see the OpenShift console in another tab.
-Copy login command to your clipboard. (right upper corner, click your account name)
-Paste that to command line console.
-
-* ** Create project and deploy application.
-Input these command to create project and deploy a@pplication.
-```
-oc new-app https://github.com/osonoi/watson-vr-node-e.git -e CLASSIFIER_ID=food -e WATSON_VISION_COMBINED_APIKEY=<APIKEY>
-Please raplace <APIKEY> to your API KEI you get in the first step of this workshop.
-oc logs -f bc/watson-vr-node-e
-oc expose deployment watson-vr-node-e --port=3000 --type=LoadBalancer --name=watson-vr-node-ingress
-oc expose service watson-vr-node-ingress
-oc get route/watson-vr-node-ingress
-```
-You can see the applcation URL like 
- http://watson-vr-node-ingress-default.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud/
-Please open new tab and access to that URL
-
-
 
