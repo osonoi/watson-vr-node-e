@@ -3,7 +3,7 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 
 # Architecture Flow
 
-![Program](https://github.com/osonoi/watson-vr-node/blob/master/images/program.png)
+![Program](https://github.com/osonoi/watson-vr-node-e/blob/master/images/program.png)
 
 # Deploy on OpenShift (using IBM.com Demo site)
 ## 1.Create Watson VR service and get credential info
@@ -16,16 +16,13 @@ and get "apikey" (Save this to your note)
 - Select "Red Hat OpenShift on IBM Cloud" (scroll down)
 - then Select "Hands on Labs for Red Hat OpenShift on IBM Cloud"
 - then Select Lab1 and "launch Lab", you can see command line interface on the right.
-
-![OpenShift](https://github.com/osonoi/watson-vr-node/blob/master/images/oc1.png)
-
+![OpenShift](https://github.com/osonoi/watson-vr-node-e/blob/master/images/oc1.png)
 - Go to Exercise 2 and lauch the OpenShift Web console as described in that page.
 - You can see the OpenShift console in another tab.
 - Copy login command to your clipboard. (right upper corner, click your account name-> click token -> copy command below "Lpg in with this token")
-
-![OpenShift](https://github.com/osonoi/watson-vr-node/blob/master/images/oc2.png)
+![OpenShift](https://github.com/osonoi/watson-vr-node-e/blob/master/images/oc2.png)
 - Paste that to command line console.
-![OpenShift](https://github.com/osonoi/watson-vr-node/blob/master/images/oc3.png)
+![OpenShift](https://github.com/osonoi/watson-vr-node-e/blob/master/images/oc3.png)
 
 ## 3.Create project and deploy application.
 - Input these command to create project and deploy a@pplication.
@@ -49,7 +46,7 @@ watson-vr-node-ingress   watson-vr-node-ingress-watson-vr.dte-ocp4-yt0ysu-915b3b
 - http://watson-vr-node-ingress-default.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud/
 - Please open new tab and access to that URL
 
-![AI](https://github.com/osonoi/watson-vr-node/blob/master/images/ai1.png)
+![AI](https://github.com/osonoi/watson-vr-node-e/blob/master/images/ai1.png)
 
 
 # Deploy on Cloud foundry
