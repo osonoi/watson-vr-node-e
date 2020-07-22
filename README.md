@@ -22,7 +22,7 @@ and get "apikey" (Save this to your note)
 ![OpenShift](https://github.com/osonoi/watson-vr-node-e/blob/master/images/oc6.png)
 
 ## 3.Create project and deploy application.
-- Input these command to create project and deploy a@pplication.
+- Input these command to create project and deploy application.
 ```
 oc new-app https://github.com/osonoi/watson-vr-node-e.git -e CLASSIFIER_ID=food -e WATSON_VISION_COMBINED_APIKEY=<APIKEY>
 ```
@@ -41,7 +41,7 @@ watson-vr-node-ingress   watson-vr-node-ingress-watson-vr.dte-ocp4-yt0ysu-915b3b
 ```
 
 - You can see the applcation URL as HOST like
-- http://watson-vr-node-ingress-default.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud/
+- http://watson-vr-node-ingress-default.dte-ocp4-yt0ysu-915b3b336cabec458a7c7ec2aa7c625f-0000.us-south.containers.appdomain.cloud/  This URL is just exampl, not working now)
 - Please open new tab and access to that URL
 
 ![AI](https://github.com/osonoi/watson-vr-node-e/blob/master/images/ai1.png)
