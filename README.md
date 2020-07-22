@@ -1,4 +1,4 @@
-# watson-vr-node
+# watson-VisualRecognition-Node.js
 Visual Recognition Web application using IBM Watson Visual Recognition This apps is identify whether your mas properly have on your face.
 
 # Architecture Flow
