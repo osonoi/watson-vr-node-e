@@ -30,7 +30,7 @@ oc new-app https://github.com/osonoi/watson-vr-node-e.git -e CLASSIFIER_ID=food 
 - like ....WATSON_VISION_COMBINED_APIKEY=923eu9213ukewjdkewj.......
 ```
 oc logs -f bc/watson-vr-node-e
-oc expose deployment watson-vr-node-e --port=3000 --type=LoadBalancer --name=watson-vr-node-ingress
+oc expose dc watson-vr-node-e --port=3000 --type=LoadBalancer --name=watson-vr-node-ingress
 oc expose service watson-vr-node-ingress
 oc get route/watson-vr-node-ingress
 ```
