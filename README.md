@@ -7,7 +7,7 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 
 # Deploy on OpenShift (using IBM.com Demo site)
 ## 1.Create Watson VR service and get credential info
-- If you already have this, you don't have to create it. you can just use exsisting service
+- If you already have Watson VR service, you don't have to create it. you can just use exsisting service
 - Reffer https://cloud.ibm.com/docs/visual-recognition?topic=visual-recognition-getting-started-tutorial
 and get "apikey" (Save this to your note)
 
