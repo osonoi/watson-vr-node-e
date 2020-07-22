@@ -93,7 +93,7 @@ cd watson-vr-node
  Follow this instruction and deploy app
 - 4-1 edit `manifest.yml` in watson-vr-node directory
    - line 3 &lt;Set Your Application Name&gt; to any name you like (It shoud be unique among IBM cloud apps)
-   - line 8 &ltSet Your CLASSIFIER_ID&gt; to your custom class number. If you don't have custom model make this food.
+   - line 8 &lt;Set Your CLASSIFIER_ID&gt; to your custom class number. If you don't have custom model make this food.
 
 example:
 ```
