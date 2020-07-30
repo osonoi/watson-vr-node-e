@@ -11,7 +11,7 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 - Reffer https://cloud.ibm.com/docs/visual-recognition?topic=visual-recognition-getting-started-tutorial
 and get "apikey" (Save this to your note)
 
-## 2-a.setup Openshift(Another OpenShift Site)
+## 2.setup Openshift(Another OpenShift Site)
 - Go to https://developer.ibm.com/tutorials/openshift-ai-integration-max-model-deployment-labs/
 - Login that website if you don't.
 - Scroll down and click "Access the Deploy AI microservices on Kubernetss lab here" and wait 1,2 minutes
