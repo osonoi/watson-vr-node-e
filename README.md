@@ -46,6 +46,10 @@ watson-vr-node-ingress   watson-vr-node-ingress-watson-vr.dte-ocp4-yt0ysu-915b3b
 
 ![AI](https://github.com/osonoi/watson-vr-node-e/blob/master/images/ai1.png)
 
+Clean up
+```
+oc delete all,configmap,pvc,serviceaccount,rolebinding --selector app=watson-vr-node-e
+```
 
 ## 2-a.setup Openshift(Another OpenShift Site)
 - Go to https://www.ibm.com/demos/
