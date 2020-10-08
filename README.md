@@ -24,7 +24,7 @@ and get "apikey" (Save this to your note)
 ## 3.Create project and deploy application.
 - Input these command to create project and deploy application.
 ```
-oc new-app https://github.com//watson-vr-node-e.git -e CLASSIFIER_ID=food -e WATSON_VISION_COMBINED_APIKEY=<APIKEY>
+oc new-app https://github.com/osonoi/watson-vr-node-e.git -e CLASSIFIER_ID=food -e WATSON_VISION_COMBINED_APIKEY=<APIKEY>
 ```
 - Please raplace APIKEY to your apikey you get in the first step of this document.
 - like ....WATSON_VISION_COMBINED_APIKEY=923eu9213ukewjdkewj.......
