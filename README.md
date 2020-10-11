@@ -5,13 +5,13 @@ Visual Recognition Web application using IBM Watson Visual Recognition This apps
 
 ![Program](https://github.com/osonoi/watson-vr-node-e/blob/master/images/program.png)
 
-# Deploy on OpenShift (using IBM.com Demo site)
+# Deploy on OpenShift (using Skills Network Labs)
 ## 1.Create Watson VR service and get credential info
 - If you already have Watson VR service, you don't have to create it. you can just use exsisting service
 - Reffer https://cloud.ibm.com/docs/visual-recognition?topic=visual-recognition-getting-started-tutorial
 and get "apikey" (Save this to your note)
 
-## 2.setup Openshift(Another OpenShift Site)
+## 2.setup Openshift(Skills Network Labs)
 - Go to https://developer.ibm.com/tutorials/openshift-ai-integration-max-model-deployment-labs/
 - Login that website if you don't.
 - Scroll down and click "Access the Deploy AI microservices on Kubernetss lab here" and wait 1,2 minutes
