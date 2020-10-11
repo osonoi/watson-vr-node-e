@@ -50,11 +50,11 @@ Clean up
 ```
 oc delete all,configmap,pvc,serviceaccount,rolebinding --selector app=watson-vr-node-e
 ```
-##
+## ------------
 ## If Skills Network is not available , please use IBM Demos.
-##
+## ------------
 
-# Deploy on OpenShift (using SIBM Demos site)
+# Deploy on OpenShift (using IBM Demos site)
 ## 1.Create Watson VR service and get credential info
 - If you already have Watson VR service, you don't have to create it. you can just use exsisting service
 - Reffer https://cloud.ibm.com/docs/visual-recognition?topic=visual-recognition-getting-started-tutorial
